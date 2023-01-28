@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <indecision-app></indecision-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import indecisionApp from './components/IndecisionAPP.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    indecisionApp
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  background: #FF7F50;
+}
+#principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+#principal img{
+  height: 400px;
+  width: 600px;
 }
 </style>
